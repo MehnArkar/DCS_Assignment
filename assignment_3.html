@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .required {
+            color: red;
+        }
+        .phone-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .phone-group input {
+            flex: 1;
+        }
+        .checkbox {
+            margin-bottom: 20px;
+        }
+        .checkbox label {
+            display: inline;
+        }
+        .checkbox a {
+            color: blue;
+            text-decoration: none;
+        }
+        .checkbox a:hover {
+            text-decoration: underline;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .buttons input {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .buttons input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Register - Create Account</h1>
+        <label for="name"><span class="required">*</span>Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><span class="required">*</span>E-Mail ID</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="alt-email"><span class="required">*</span>Alternate E-Mail ID</label>
+        <input type="email" id="alt-email" name="alt-email" required>
+
+        <label>Country Code - City Code - Phone Number</label>
+        <div class="phone-group">
+            <input type="text" name="country-code" placeholder="Country Code">
+            <input type="text" name="city-code" placeholder="City Code">
+            <input type="text" name="phone-number" placeholder="Phone Number">
+        </div>
+
+        <label for="mobile-phone">Mobile Phone</label>
+        <input type="text" id="mobile-phone" name="mobile-phone">
+
+        <label for="address"><span class="required">*</span>Your Postal Address</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="country"><span class="required">*</span>Country</label>
+        <select id="country" name="country" required>
+            <option value="">---------Select One---------</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <label for="password"><span class="required">*</span>Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="re-password"><span class="required">*</span>Re-Enter Password</label>
+        <input type="password" id="re-password" name="re-password" required>
+
+        <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the <a href="#">Terms of Use</a></label>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Continue >>">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
