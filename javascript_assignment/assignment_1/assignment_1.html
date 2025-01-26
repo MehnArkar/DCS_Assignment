@@ -1,0 +1,50 @@
+<!-- Assignment by DCS - 122 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Registration</title>
+    <script src="validation.js"></script>
+</head>
+<body>
+    <h2>Payment Registration</h2>
+    <form id="paymentForm" onsubmit="return validateForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" maxlength="9"><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" maxlength="7"><br><br>
+        
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street"><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br><br>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+        
+        <label for="postCode">Post Code:</label>
+        <input type="text" id="postCode" name="postCode" maxlength="5"><br><br>
+        
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber"><br><br>
+        
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="date" id="expiryDate" name="expiryDate"><br><br>
+        
+        <fieldset>
+            <legend>Payment Information:</legend>
+            <input type="radio" id="credit" name="paymentMethod" value="credit">
+            <label for="credit">Credit Card</label><br>
+            <input type="radio" id="debit" name="paymentMethod" value="debit">
+            <label for="debit">Debit Card</label><br>
+        </fieldset><br>
+        
+        <input type="submit" value="Submit my details">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
