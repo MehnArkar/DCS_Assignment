@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>World Map</h1>
+        <p>A world map is a map of most or all of the surface of the Earth. World maps form a distinctive category of maps due to the problem of projection. Maps by necessity distort the presentation of the earth's surface. These distortions reach extremes in a world map. The many ways of projecting the earth reflect diverse technical and aesthetic goals for world maps.</p>
+        
+        <img src="images/world-map.webp" alt="World Map" usemap="#worldmap">
+        
+        <map name="worldmap">
+            <!-- North America -->
+            <area shape="poly" 
+                  coords="60,50,180,50,215,70,215,120,170,140,140,170,90,160,40,120" 
+                  href="north_america.html" 
+                  alt="North America">
+            
+            <!-- South America -->
+            <area shape="poly" 
+                  coords="130,180,170,180,190,250,150,310,110,260" 
+                  href="south_america.html" 
+                  alt="South America">
+            
+            <!-- Europe -->
+            <area shape="poly" 
+                  coords="250,50,310,50,350,70,330,100,280,110,260,90" 
+                  href="europe.html" 
+                  alt="Europe">
+            
+            <!-- Africa -->
+            <area shape="poly" 
+                  coords="250,130,310,130,330,200,290,250,240,220,230,160" 
+                  href="south_africa.html" 
+                  alt="Africa">
+            
+            <!-- Asia -->
+            <area shape="poly" 
+                  coords="330,50,440,50,460,100,450,160,380,170,350,140,340,90" 
+                  href="asia.html" 
+                  alt="Asia">
+            
+            <!-- Australia -->
+            <area shape="poly" 
+                  coords="420,200,460,200,470,240,450,260,410,250,400,220" 
+                  href="australia.html" 
+                  alt="Australia">
+        </map>
+    </div>
+</body>
+</html>
